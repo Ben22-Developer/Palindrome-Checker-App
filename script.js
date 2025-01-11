@@ -28,7 +28,7 @@ const checkIfPalindrome = (textInputted) => {
     let reversed = [];
     loop_2 = 0;
     regex = /[^\/():?_\s!@#\$%\^&*\.,:;'"><~`\-\+\=\{\}\[\]\|\\]+/g;
-    textToChange = textInputted.match(regex)?.join('') ?? 'Invalid Input';
+    textToChange = textInputted.match(regex)?.join('') ?? textInputted;
     textToChange = textToChange.toLowerCase();
     textToCompare = textToChange;
     textToChange = [...textToChange];
