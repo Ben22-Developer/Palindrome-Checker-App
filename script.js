@@ -46,10 +46,10 @@ const checkIfPalindrome = (textInputted) => {
         result.removeAttribute('class','none');
     }
     if (textToCompare == reversed) {
-        result.innerText =`${textInputted} is a palandrome.`;
+        result.innerText =`${textInputted} is a palindrome.`;
     }
     else {
-        result.innerText =`${textInputted} is not palandrome.`;
+        result.innerText =`${textInputted} is not a palindrome.`;
     }
     history(textInputted);
 };
