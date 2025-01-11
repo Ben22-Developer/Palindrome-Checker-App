@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is palindrome web application app">
+    <link rel="icon" type="JPG" href="image/icon.jpg">
+    <link rel="stylesheet" href="styles.css"> 
+    <script defer src="script.js"></script>
+    <title>Palindrome | Checker | Application</title>
+</head>
+<body>
+    <main>
+        <header>
+           <h1> Is it a palindrome ?</h1>
+        </header>
+        <section id="main-section">
+            <div id="asked-and-cheats-div">
+                <div id="recent-asked-div">
+                    <h2 id="recent-asked-title"><span>History </span><!--<span id="nbr-of-recent-asked"></span>--><span style="font-weight: bolder;"> ▽</span></h2>
+                    <ol id="all-recent-asked" class="hidden">
+                        <p id="no-history">There is no current History</p>
+                    </ol>
+                </div>
+                <div id="cheats">
+                    <h2 id="hint-cheat-title">Hint Cheats<span style="font-weight: bolder;"> ▽</span></h2>
+                    <ol id="all-cheat-hints" class="hidden">
+                        <li><span class="hint">eye</span> is a palandrome.</li>
+                        <li><span class="hint">-e-y-e</span> is a palandrome.</li>
+                        <li><span class="hint">race car</span> is a palandrome.</li>
+                        <li><span class="hint">A man, a plan, a canal. Panama</span> is a palandrome.</li>
+                        <li><span class="hint">My age is 0, 0 si ega ym.</span> is a palindrome.</li>
+                        <li><span class="hint">0_0 (: /-\ :) 0-0</span> is a palindrome.</li>
+                    </ol>
+                </div>
+            </div>
+            <form>
+                <label for="text-input">Enter a text to check if it's a palindrome: </label>
+                <input type="text" id="text-input">
+                <button id="check-btn">Check</button>
+            </form>
+            <p id="result" class="none"></p>
+            <p id="definition">
+                <span>💡</span>
+                <span>
+                A palindrome is a word or sentence that's spelled the same way both 
+                forward and backward by ignoring punctuation, case sensitivity, and spacing.  
+                </span>
+            </p>
+        </section>
+        <footer>
+            &copy; Ben22-developer 
+        </footer>
+    </main>
+</body>
+</html>
